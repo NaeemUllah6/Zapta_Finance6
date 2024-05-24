@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Basic styles for the navbar */
+/* body{
+  overflow-x: hidden;
+} */
+
+
+
+
+
+/* animation////////////////// */
+.parent1 {
+  width: 300px; /* Apne div ke size ke hisab se adjust karein */
+  height: 30%; /* Apne div ke size ke hisab se adjust karein */ /* Parent div ko position relative set karein */
+  z-index: +1;
+  transform: translateY(-100px);
+}
+
+.parent1 img {
+  position: absolute;
+  animation: moveUpDown 4s infinite alternate; 
+}
+.second-img{
+  transform: translateY(139px);
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 0; /* Shuruwat position */
+  }
+  100% {
+    top: calc(-50% - 10px); /* Yahaan image ko kitna upar ya niche le jana hai, isko adjust karein */
+  }
+}
+/* /////////////////////////// */
+.parent2 {
+  width: 300px; /* Apne div ke size ke hisab se adjust karein */
+  height: 30%; /* Apne div ke size ke hisab se adjust karein */
+ /* Parent div ko position relative set karein */
+  z-index: +1;
+  transform: translateY(100px);
+}
+
+.parent2 img {
+  position: absolute;
+  animation: moveUpDown 4s infinite alternate; 
+}
+.second-img{
+  transform: translateY(139px);
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 0; /* Shuruwat position */
+  }
+  100% {
+    top: calc(-50% - 10px); /* Yahaan image ko kitna upar ya niche le jana hai, isko adjust karein */
+  }
+}
+
+/* animation end/////////////////// */
+.navbar {
+      background-color: #ffffff;
+      display: flex;
+      border-radius: 32px;
+      top: 15px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      /* position:fixed; */
+      z-index: 1;
+    }
+    /* Logo style */
+    .navbar .logo {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    /* Navigation links style */
+    .navbar .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Individual navigation link style */
+    .navbar .nav-links a {
+      color: #565656;
+      font-size: 15px;
+      font-family: Josefin Sans;
+      text-decoration: none;
+      padding: 0 7px;
+      font-weight: bold;
+    }
+
+    /* Button style */
+    .navbar .btn {
+      padding: 16px 32px 16px 32px;
+      background-color: #c82d2d;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 16px;
+    }
+
+    /* Media query for responsiveness */
+    @media screen and (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .navbar .nav-links {
+        margin-top: 20px;
+      }
+
+      .navbar .btn {
+        margin-top: 20px;
+      }
+    }
+    .bg{
+      background-size: cover; /* Image ko container ke puri space par cover karega */
+      background-position: center; /* Image ko horizontally aur vertically center karega */
+      height: 140vh; /* Container ki height ko viewport height (vh) ke hisaab se set karega */
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      border-radius:25px;
+    }
+    /* /////////////Header start////////////// */
+    .header-heading{
+      margin-top: 200px;
+      font-size: 72px;
+      font-family: josefin sans;
+      font-weight: bold;  
+    }
+    .header-sub{
+      font: 24px;
+      font-family: lato;
+    }
+    /* /////////////////components waitlist///////////////////// */
+    .waitlist-heading{
+      font-size: 64px;
+      font-family: josefin sans;
+      margin-top: 90px;
+      font-weight: bold;
+    }
+    .waitlist-subheading{
+      font-size: 18px;
+      font-family: lato;
+    }
+    .stable_coin-heading{
+      font-size: 40px;
+      font-family: josefin sans;
+      margin-top: 100px;
+      font-weight: bold;
+
+    }
+    .buy-sell-div{
+      background-size: cover; /* Image ko container ke puri space par cover karega */
+      background-position: center; /* Image ko horizontally aur vertically center karega */
+      height: 100vh; /* Container ki height ko viewport height (vh) ke hisaab se set karega */
+      display: flex;
+      margin-top: 150px;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      border-radius:25px;
+    }
+    .iphone{
+      margin-top: 300px;
+      .overlay-img {
+        margin:;
+        bottom: -30%; /* adjust the percentage to position the image accordingly */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px; /* adjust width as needed */
+        height: auto;
+      }
+
+    }
+    .endless-div {
+ /* Image ke naam aur path ko yahan specify karein */
+      background-size: cover; /* Image ko container ke puri space par cover karega */
+      background-position: center; /* Image ko horizontally aur vertically center karega */
+      height: 80vh; /* Container ki height ko viewport height (vh) ke hisaab se set karega */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      border-radius:25px;
+    }
+    .endless-heading{
+      font-size: 40px;
+      font-family: josefin sans;
+      margin-top: 60px;
+      font-weight: bold;
+    }
+    .card-text{
+      font-size: 12px;
+      font-family: Lato;
+      color:#565656;
+    }
+    .card-heading{
+      color:#212121;
+      font-size: 14px;
+
+    }
+    .my-enlist-card{
+      margin:;
+      width:350px;
+      border-radius:24px;
+      box-shadow: rgba(251, 1, 1, 0.475) 0px 2px 4px 0px, rgba(247, 2, 2, 0.492) 0px 2px 16px 0px;
+    }
+    .mera-chevron{
+      margin-top: 12px;
+    }
+    .stable-coin-div{
+      margin-top:96px;
+    }
+    .buy-sell-div{
+      background-size: cover; /* Image ko container ke puri space par cover karega */
+      background-position: center; /* Image ko horizontally aur vertically center karega */
+      height: 100vh; /* Container ki height ko viewport height (vh) ke hisaab se set karega */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      border-radius:25px;
+
+    }
+    .translate{
+      transform: translateY(150px);
+    }
+    .buy-heading{
+      font-size: 5.4vw;
+      font-family: josefin sans;
+      margin-top: 130px;
+    }
+    .buy-subheading{
+      font-size:2vw;
+    }
+    .meraphone{
+      transform: translateY(220px);
+      width: auto;
+      height: 100vh;
+
+    }
+    .waitlist-main{
+      margin-top: 180px;
+    }
+    .blockchain-heading{
+      margin-top:220px;
+      font-size: 64px;
+      font-family: josefin sans;
+      font-weight: bold;
+    }
+  .blockchain-subheading{
+    font-size: 28px;
+    font-family: josefin sans;
+    font-weight: bold;
+    margin-top: 270px;
+  }
+  .blockhain-text{
+    font-size:18px;
+    font-family: Lato;
+    color:#565656
+  }
+  .kena-1{
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 130px;
+  }
+  .kena-2{
+    font-family: josefin sans;
+    font-size: 64px;
+  }
+  .management-div{
+border-radius:50px; margin-top: 200px; margin-bottom: 250px;
+background: linear-gradient(90deg, rgba(219,0,17,1) 47%, rgba(175,0,14,1) 79%, rgba(255,111,0,1) 100%);
+    
+  }
+  .management-heading{
+    font-size: 36px;
+    font-family: josefin sans;
+    color: white;
+    font-weight: bold;
+    padding-top: 200px;
+  }
+  .management-text{
+    font-size:16px;
+    font-family: Lato;
+    color:white;
+  }
+  .float-bottom-img{
+    margin:;
+  }
+  .float-top-img{
+
+
+  }
+  .footer-text{
+    font-size: 14px;
+    font-family: Lato;
+  }
+  .last-link{
+    font-size: 12px;
+    font-family: Lato;
+    color:#565656;
+    text-decoration:none;
+    padding-bottom:12px;
+  }
+
